@@ -148,8 +148,8 @@ const Projects = () => {
       </div>
       {/* --- Modal1 --- */}
       {modal1 && (
-        <div className="fixed inset-0  bg-black bg-opacity-30 backdrop-blur-sm flex items-center justify-center">
-          <div className="bg-white h-3/4 w-1/3 rounded flex flex-col items-center justify-evenly p-6 shadow-lg">
+        <div className="fixed inset-0  bg-black bg-opacity-30 backdrop-blur-sm flex items-center justify-center sm:z-10">
+          <div className="bg-white h-3/4 w-1/3 rounded flex flex-col items-center justify-evenly p-6 shadow-lg sm:w-2/3 sm:h-5/6 ">
             <div
               onClick={toggleModal1}
               className="bg-red relative bottom-10 left-1/2 mr-4 cursor-pointer font-bold bg-slate-400 w-12 h-8 flex justify-center text-xs border border-black items-center rounded-sm "
@@ -166,19 +166,27 @@ const Projects = () => {
             </div>
 
             <div>
-              <h2 className="text-2xl mb-2">Home school trip planner</h2>
-              <h3 className="bg-slate-500 w-36 p-1 mb-4 rounded-md text-white">
+              <h2 className="text-2xl mb-2 sm:text-lg">
+                Home school trip planner
+              </h2>
+              <h3 className="bg-slate-500 w-36 p-1 mb-4 rounded-md text-white sm:text-sm sm:w-32">
                 Web Application
               </h3>
               <div className="text-slate-400">
-                <p className="underline">Technologys used:</p>
-                <p>
+                <p className="underline ">Technologys used:</p>
+                <p
+                  className="sm:text-sm
+                "
+                >
                   Here we have a web application which was built with HTML, CSS,
                   React for the front end and Stripe and Firebase for the
                   Backend.
                 </p>
                 <p className="underline">Issues</p>
-                <p>
+                <p
+                  className="sm:text-sm
+                "
+                >
                   As this was the first time using stripe i found it difficult
                   to connect and retrieve the UUID from the ticket purchaser.
                 </p>
@@ -188,7 +196,7 @@ const Projects = () => {
             <div>
               <a
                 href="https://github.com/Saalehid365/irish-sea-moss-website"
-                className="h-12 bg-slate-500 w-48 rounded-md text-xl text-white hover:bg-slate-600"
+                className="h-12 bg-slate-500 w-48 rounded-md text-xl text-white hover:bg-slate-600 sm:w-full sm:text-2xl sm:px-4"
               >
                 Live
               </a>
