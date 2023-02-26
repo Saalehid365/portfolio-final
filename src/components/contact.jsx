@@ -7,13 +7,13 @@ const Contact = () => {
       className="contact bg-teal-900 flex flex-col items-center
     "
     >
-      <div className="bg-teal-700 w-2/4 h-48 relative -top-12 shadow-xl rounded-lg">
+      <div className="bg-teal-700 w-2/4 h-64 relative -top-12 shadow-xl rounded-lg">
         <div className="text-col w-full rounded-lg flex h-full px-12 flex-col items-start justify-evenly text-gray-500 ">
           <div>
             <p className="text-2xl text-neutral-300 ">Contact me</p>
           </div>
           <form className="flex flex-col w-full items-start justify-start">
-            <div className="flex w-full justify-between">
+            <div className="flex w-full justify-between mb-4">
               <div className="flex items-center justify-between w-1/2">
                 <p className="text-neutral-300 ">Name:</p>
                 <input
@@ -36,7 +36,7 @@ const Contact = () => {
               <input
                 placeholder="Message"
                 type="text"
-                className="h-16 w-5/6 rounded-md mt-2 px-2"
+                className="h-24 w-5/6 rounded-md mt-2 px-2"
               ></input>
             </div>
           </form>
