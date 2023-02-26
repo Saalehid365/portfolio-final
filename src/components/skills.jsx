@@ -10,8 +10,8 @@ import {
 
 const Skills = () => {
   return (
-    <div className="bg-neutral-700 w-2/4 h-44 flex items-center justify-center relative -top-12  shadow-xl ml-48 rounded-lg">
-      <div className="text-col w-full rounded-lg flex items-center justify-around text-gray-500 text-6xl">
+    <div className="bg-neutral-700 w-2/4 h-44 flex items-center justify-center relative -top-12  shadow-xl ml-48 rounded-lg md:w-2/3 sm:h-96 sm:w-1/3 sm:top-10 sm:right-14">
+      <div className="text-col w-full rounded-lg flex items-center justify-around text-gray-500 text-5xl sm:flex sm:flex-col sm:text-4xl">
         <div className="flex flex-col items-center hover:text-teal-700 ">
           <FaHtml5 />
           <p className="text-base">HTML</p>

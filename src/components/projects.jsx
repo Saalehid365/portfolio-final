@@ -20,23 +20,25 @@ const Projects = () => {
         </p>
       </div>
       {/* --- project1 --- */}
-      <div className="flex justify-around w-screen px-28 mb-48">
-        <div>
+      <div className="flex justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+        <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
             src={project1}
             alt="project1"
           ></img>
         </div>
-        <div className="flex flex-col justify-center w-2/5">
-          <p className="text-3xl text-gray-400">Home school Trip Planner</p>
+        <div className="flex flex-col justify-center w-2/5 md:w-full md:flex md:items-center">
+          <p className="text-3xl text-gray-400 md:mt-8">
+            Home school Trip Planner
+          </p>
           <p className="w-4/5 text-lg mt-3 text-gray-500">
             A Web Application for a client for easy access for the parents to
             view and purchase tickets for upcoming trips for their children.
           </p>
-          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500">
+          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
             <p>Made with</p>
-            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md">
+            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md sm:w-52">
               <FaHtml5 />
               <FaCss3 />
               <FaJs />
@@ -62,23 +64,25 @@ const Projects = () => {
       </div>
 
       {/* --- project2 --- */}
-      <div className="flex flex-row-reverse justify-around w-screen px-28 mb-48">
-        <div>
+      <div className="flex flex-row-reverse justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+        <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
             src={project2}
             alt="project2"
           ></img>
         </div>
-        <div className="flex flex-col justify-center w-2/5">
-          <p className="text-3xl text-gray-400">Traditional Wellness Website</p>
+        <div className="flex flex-col justify-center w-2/5 md:w-full md:flex md:items-center sm:items-center">
+          <p className="text-3xl text-gray-400 md:mt-8 sm:pl-8">
+            Traditional Wellness Website
+          </p>
           <p className="w-4/5 text-lg mt-3 text-gray-500">
             A Website for a clients health store wh ich includes a personal blog
             page
           </p>
-          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500">
+          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
             <p>Made with</p>
-            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md">
+            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md sm:w-52">
               <FaHtml5 />
               <FaCss3 />
               <FaJs />
@@ -99,23 +103,26 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-around w-screen px-28 mb-48">
-        <div>
+      {/* --- project3 --- */}
+      <div className="flex justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+        <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
             src={project1}
             alt="project1"
           ></img>
         </div>
-        <div className="flex flex-col justify-center w-2/5">
-          <p className="text-3xl text-gray-400">Kingdom Appliances CRM</p>
-          <p className="w-4/5 text-lg mt-3 text-gray-500">
-            A Web Application CRM for a clients buisness which logs all items to
-            a database with the current locations and status of each appliance.
+        <div className="flex flex-col justify-center w-2/5 md:w-full md:flex md:items-center">
+          <p className="text-3xl text-gray-400 md:mt-8">
+            Home school Trip Planner
           </p>
-          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500">
+          <p className="w-4/5 text-lg mt-3 text-gray-500">
+            A Web Application for a client for easy access for the parents to
+            view and purchase tickets for upcoming trips for their children.
+          </p>
+          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
             <p>Made with</p>
-            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md">
+            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md sm:w-52">
               <FaHtml5 />
               <FaCss3 />
               <FaJs />
@@ -123,13 +130,19 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex w-72 justify-between mt-12">
-            <button className="bg-teal-700 border-solid w-32 rounded-md text-gray-400 text-2xl hover:bg-teal-600 hover:text-gray-300">
+            <button
+              onClick={toggleModal1}
+              className="bg-teal-700 border-solid w-32 rounded-md text-gray-400 text-2xl hover:bg-teal-600 hover:text-gray-300"
+            >
               Demo
             </button>
-            <button className="h-12 w-32 flex  items-center justify-evenly border border-solid border-gray-400 rounded-md text-gray-400 text-2xl hover:bg-neutral-600 hover:text-gray-300">
+            <a
+              href="https://github.com/Saalehid365/homeschoolTrippy"
+              className="h-12 w-32 flex  items-center justify-evenly border border-solid border-gray-400 rounded-md text-gray-400 text-2xl hover:bg-neutral-600 hover:text-gray-300"
+            >
               <FaGithub />
               Code
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -139,10 +152,11 @@ const Projects = () => {
           <div className="bg-white h-3/4 w-1/3 rounded flex flex-col items-center justify-evenly p-6 shadow-lg">
             <div
               onClick={toggleModal1}
-              className="bg-red relative bottom-10 left-1/2 mr-4 cursor-pointer font-bold bg-slate-400 w-12 h-8 flex justify-center text-xs border border-black items-center rounded-sm"
+              className="bg-red relative bottom-10 left-1/2 mr-4 cursor-pointer font-bold bg-slate-400 w-12 h-8 flex justify-center text-xs border border-black items-center rounded-sm "
             >
               Close
             </div>
+
             <div className="mt-8 flex justify-center">
               <video
                 autoPlay="true"
