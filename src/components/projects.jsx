@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import project1 from "../assests/homeed.jpg";
 import project2 from "../assests/traditionalwellness.jpg";
+import project3 from "../assests/kacrm.jpg";
 import homeedVid from "../assests/homeedVid.mov";
 import { FaHtml5, FaCss3, FaReact, FaJs, FaGithub } from "react-icons/fa";
 
@@ -21,6 +22,50 @@ const Projects = () => {
       </div>
       {/* --- project1 --- */}
       <div className="flex justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+        <div className="md:flex md:items-center md:justify-center">
+          <img
+            className="h-96 w-5/6 rounded-xl "
+            src={project3}
+            alt="project1"
+          ></img>
+        </div>
+        <div className="flex flex-col justify-center w-2/5 md:w-full md:flex md:items-center">
+          <p className="text-3xl text-gray-400 md:mt-8">
+            Kingdom Appliances CRM
+          </p>
+          <p className="w-4/5 text-lg mt-3 text-gray-500">
+            A Customer Relation Management System for a kitchen appliance
+            company which monitors the engineers daily work tickets and keeps a
+            track of parts ordered for the engineers.
+          </p>
+          <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
+            <p>Made with</p>
+            <div className="bg-neutral-800 w-72 h-12 flex items-center justify-evenly  text-gray-500 text-4xl rounded-md sm:w-52">
+              <FaHtml5 />
+              <FaCss3 />
+              <FaJs />
+              <FaReact />
+            </div>
+          </div>
+          <div className="flex w-72 justify-between mt-12">
+            <button
+              onClick={toggleModal1}
+              className="bg-teal-700 border-solid w-32 rounded-md text-gray-400 text-2xl hover:bg-teal-600 hover:text-gray-300"
+            >
+              Demo
+            </button>
+            <a
+              href="https://github.com/Saalehid365/homeschoolTrippy"
+              className="h-12 w-32 flex  items-center justify-evenly border border-solid border-gray-400 rounded-md text-gray-400 text-2xl hover:bg-neutral-600 hover:text-gray-300"
+            >
+              <FaGithub />
+              Code
+            </a>
+          </div>
+        </div>
+      </div>
+      {/* --- project2 --- */}
+      <div className="flex flex-row-reverse justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
         <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
@@ -64,10 +109,10 @@ const Projects = () => {
       </div>
 
       {/* --- project2 --- */}
-      <div className="flex flex-row-reverse justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+      <div className="flex  justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
         <div className="md:flex md:items-center md:justify-center">
           <img
-            className="h-96 w-5/6 rounded-xl "
+            className="h-96 w-4/6 rounded-xl "
             src={project2}
             alt="project2"
           ></img>
@@ -77,7 +122,7 @@ const Projects = () => {
             Traditional Wellness Website
           </p>
           <p className="w-4/5 text-lg mt-3 text-gray-500">
-            A Website for a clients health store wh ich includes a personal blog
+            A Website for a clients health store which includes a personal blog
             page
           </p>
           <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
@@ -104,7 +149,7 @@ const Projects = () => {
         </div>
       </div>
       {/* --- project3 --- */}
-      <div className="flex justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
+      <div className="flex flex-row-reverse justify-around w-screen px-28 mb-48 md:flex md:flex-col md:items-center md:px-0">
         <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
