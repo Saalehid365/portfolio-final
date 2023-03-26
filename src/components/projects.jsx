@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import project1 from "../assests/homeed.jpg";
 import project2 from "../assests/traditionalwellness.jpg";
 import project3 from "../assests/kacrm.jpg";
+import project4 from "../assests/salafibookmarks.png";
 import homeedVid from "../assests/homeedVid.mov";
 import { FaHtml5, FaCss3, FaReact, FaJs, FaGithub } from "react-icons/fa";
 
@@ -153,17 +154,14 @@ const Projects = () => {
         <div className="md:flex md:items-center md:justify-center">
           <img
             className="h-96 w-5/6 rounded-xl "
-            src={project1}
+            src={project4}
             alt="project1"
           ></img>
         </div>
         <div className="flex flex-col justify-center w-2/5 md:w-full md:flex md:items-center">
-          <p className="text-3xl text-gray-400 md:mt-8">
-            Home school Trip Planner
-          </p>
+          <p className="text-3xl text-gray-400 md:mt-8">Salafi Bookmarks</p>
           <p className="w-4/5 text-lg mt-3 text-gray-500">
-            A Web Application for a client for easy access for the parents to
-            view and purchase tickets for upcoming trips for their children.
+            A Website for a client who sells islamic books and accesories
           </p>
           <div className="flex items-center pt-4 justify-between w-3/4 text-gray-500 md:w-1/2 sm:w-full sm:flex sm:justify-evenly">
             <p>Made with</p>
@@ -182,7 +180,7 @@ const Projects = () => {
               Demo
             </button>
             <a
-              href="https://github.com/Saalehid365/homeschoolTrippy"
+              href="https://github.com/Saalehid365/salafibookmarks"
               className="h-12 w-32 flex  items-center justify-evenly border border-solid border-gray-400 rounded-md text-gray-400 text-2xl hover:bg-neutral-600 hover:text-gray-300"
             >
               <FaGithub />
