@@ -1,18 +1,9 @@
 import "./App.css";
-import Contact from "./components/contact";
-import Footer from "./components/footer";
-import Hero from "./components/hero";
-import Projects from "./components/projects";
-import Skills from "./components/skills";
 
 function App() {
   return (
-    <div className="bg-neutral-700">
-      <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+    <div className=" bg-display bg-no-repeat bg-cover h-screen w-screen flex justify-center items-center">
+      <h2 className="text-5xl pr-4">Updating my portfolio!</h2>
     </div>
   );
 }
